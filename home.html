@@ -7,13 +7,23 @@
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
     <nav class="navbar background h-nav-resp">
         <ul class="nav-list v-class-resp">
             <div class="logo"><img src="water-recycle-vector-icon.jpg" alt="logo"></div>
-            <li><a href="index.html" id="home">Home</a></li>
-            <li><a href="" id="about" >About</a></li>
-            <li><a href="" id="services" >Services</a></li>
-            <li><a href="" id="contact" >Contact</a></li>
+            <li><a href="#about" id="about">About</a></li>
+            <li><a href="#services" id="services">Services</a></li>
+            <li><a href="#contact-us" id="contact">Contact</a></li>
         </ul> 
         <div class="burger">
             <div class="line"></div>
@@ -128,37 +138,53 @@
         </ul>
         <h1>Services</h1><br><br>
         <button><a href="listing.html">Listing</a></button>
-        <button><a href="buying"></a>Buying</button><br><br>
+        <button><a href="buying.html">Buying</a></button><br><br>
         <hr>
-    <div class="line-1">
-        <section class="contact">
-        <div>
-            <div class="finalflex">
-                <div class="form">
-                    <h2 class="text-center">Contact Us</h2>
-                    <div>
-                    <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name">
-                    </div>
-                    <div>
-                        <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter your phone">
-                    </div>
-                    <div><input class="form-input" type="email" name="email" id="email" placeholder="Enter your email">
-                    </div>
-                    <textarea class="form-input" name="text" id="text" cols="23" rows="" placeholder="Elaborate your concern"></textarea>
-                    <div>
-                        <button style="color: #fff; padding: 10px 30px;">Submit</button>
-                    </div>
-                </div>
+        <div id="contact-us" class="line-1">
+            <section class="contact">
                 <div>
-                    <div class="social"><img src="instagram.png"><img src="twitter.png"><img src="discord.png"><img src="linkedin.png"><h2>Social media</h2></div>
-                    
+                    <div class="finalflex">
+                        <div class="form">
+                            <h2 class="text-center">Contact Us</h2>
+                            <div>
+                                <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name">
+                            </div>
+                            <div>
+                                <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter your phone">
+                            </div>
+                            <div>
+                                <input class="form-input" type="email" name="email" id="email" placeholder="Enter your email">
+                            </div>
+                            <textarea class="form-input" name="text" id="text" cols="23" rows="" placeholder="Elaborate your concern"></textarea>
+                            <div>
+                                <button style="color: #fff; padding: 10px 30px;">Submit</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="social">
+                                <div class="social-item">
+                                    <img src="instagram.png" alt="Instagram">
+                                    <div class="social-text">Instagram</div>
+                                </div>
+                                <div class="social-item">
+                                    <img src="twitter.png" alt="Twitter">
+                                    <div class="social-text">Twitter</div>
+                                </div>
+                                <div class="social-item">
+                                    <img src="discord.png" alt="Discord">
+                                    <div class="social-text">Discord</div>
+                                </div>
+                                <div class="social-item">
+                                    <img src="linkedin.png" alt="LinkedIn">
+                                    <div class="social-text">Linkedin</div>
+                                </div>
+                                <h2>Social media</h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
-        </section>
-        
-            
-    </div>
     </section>
 </body>
 </html>
