@@ -25,7 +25,7 @@ html{
 .logo img{
     /* transform: translateX(-300px); */
     margin-right: 130%;
-    width:20%;
+    width: 8%;
     border:3px solid white;
     border-radius: 50px;
 }
@@ -46,7 +46,6 @@ html{
 }
 
 .rightnav{
-    
     width:30%;
     padding: 0 23px; 
     text-align:right;
@@ -54,21 +53,20 @@ html{
 
 #home{
     text-decoration: none;
-    color:white;
-}
-#about{
-    text-decoration: none;
-    color:white;
-}
-#services{
-    text-decoration: none;
-    color:white;
-}
-#contact{
-    text-decoration: none;
+    white-space: nowrap;
     color:white;
 }
 
+#go{
+    padding: 20px 10px;
+    font-size: 1.0rem;
+    background-color: rgb(8, 141, 236);
+    color:white;
+    border-radius: 100px;
+    border:3px solid white;
+    margin-left: 110%;
+    cursor: pointer;
+}
 
 .background{
     background: rgba(0,0,0,0.7) url('friend.jpeg');
@@ -93,14 +91,14 @@ html{
 
 .form-popup{
     position: fixed;
-    top: 55%;
+    top: 57%;
     left: 50%;
     max-width: 720px;
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
     padding-right: 20px;
-    border-color: #c01717;
-    border: 2px solid #de2929;
+    border-color: rgb(8, 141, 236);
+    border: 2px solid  rgb(8, 141, 236);
     transform: translate(-50%,-50%);
 }
 
@@ -157,7 +155,7 @@ form .input-field input{
 }
 
 .input-field input:focus{
-    border-color: orange;
+    border-color: rgb(8, 141, 236);
 }
 
 .input-field input:is(:focus, :valid){
@@ -173,14 +171,14 @@ form .input-field label{
 }
 
 .input-field input:is(:focus, :valid) ~ label {
-    color: orange;
+    color: rgb(8, 141, 236);
     font-size: 0.75rem;
     transform: translateY(-120%);
 
 }
 
 .form-box a{
-    color: orange;
+    color: rgb(8, 141, 236);
     text-decoration: none;
 }
 
@@ -204,11 +202,11 @@ form button{
     margin: 25px 0;
     color: #fff;
     cursor: pointer;
-    background:orange ;
+    background:rgb(8, 141, 236) ;
     transition: 0.2s ease;
 }
 form button:hover{
-    background: orange;
+    background: rgb(8, 141, 236);
 }
 .form-box .bottom-link{
     text-align: center;
@@ -253,8 +251,3 @@ form button:hover{
         text-align:center;
     }
 }
-
-
-
-
-

@@ -70,7 +70,9 @@ section{
 .logo img{
     /* transform: translateX(-300px); */
     margin-right: 130%;
-    width:10%;
+    width:14%;
+    margin-top: 5px;
+    margin-bottom: 5px;
     border:3px solid white;
     border-radius: 50px;
 }
@@ -84,10 +86,10 @@ section{
     list-style: none;
     padding: 16px 40px;
     text-decoration: none;
+    margin-top: 10px;
     color:white;
     font-size: 20px;
     font-family: 'Ubuntu',sans-serif;
-
 }
 
 .rightnav{
@@ -119,14 +121,6 @@ section{
     background: rgba(0,0,0,0.7) url('friend.jpeg');
     background-size: cover;
     background-blend-mode: darken;
-}
-
-.burger{
-    display: none;
-    position: absolute;
-    cursor: pointer;
-    right: 5%;
-    top: 15px;
 }
 
 .line{
