@@ -18,14 +18,14 @@ html{
 
 .logo{
     display:flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
 .logo img{
     /* transform: translateX(-300px); */
     margin-right: 130%;
-    width:10%;
+    width: 8%;
     border:3px solid white;
     border-radius: 50px;
 }
@@ -53,19 +53,19 @@ html{
 
 #home{
     text-decoration: none;
+    white-space: nowrap;
     color:white;
 }
-#about{
-    text-decoration: none;
+
+#go{
+    padding: 20px 10px;
+    font-size: 1.0rem;
+    background-color: rgb(8, 141, 236);
     color:white;
-}
-#services{
-    text-decoration: none;
-    color:white;
-}
-#contact{
-    text-decoration: none;
-    color:white;
+    border-radius: 100px;
+    border:3px solid white;
+    margin-left: 11%;
+    cursor: pointer;
 }
 
 .background{
