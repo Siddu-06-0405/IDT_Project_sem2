@@ -68,6 +68,10 @@ html{
     cursor: pointer;
 }
 
+#go:hover{
+    background-color: rgb(196, 24, 24);
+}
+
 .background{
     background: rgba(0,0,0,0.7) url('friend.jpeg');
     background-size: cover;
@@ -202,52 +206,19 @@ form button{
     margin: 25px 0;
     color: #fff;
     cursor: pointer;
-    background:rgb(8, 141, 236) ;
+    background:rgb(55, 162, 239) ;
     transition: 0.2s ease;
 }
 form button:hover{
+    color: #fff;
     background: rgb(8, 141, 236);
 }
+
+form button:focus{
+    box-shadow: 0 0 2px black;
+}
+
 .form-box .bottom-link{
     text-align: center;
 }
 
-@media only screen and (max-width: 1244px){
-    .nav-list{
-        flex-direction: column;
-    }
-    .navbar{
-        flex-direction: column;
-        transition: all 0.7s ease-in-out;
-        height:447px;
-    }
-    .rightnav{
-        text-align: center;
-    }
-    .box-main{
-        flex-direction: column-reverse;
-        max-width: 100%;
-    }
-    
-    .burger{
-        display: block;
-    }
-    .h-nav-resp{
-        height:72px;
-    }
-    .v-class-resp{
-        opacity: 0;
-    }
-    .section{
-        flex-direction: column-reverse;
-    }
-    .text-small{
-        text-align:center;
-    }
-    .buttons{
-        text-align:center;
-    }
-    .text-big{
-        text-align:center;
-    }
-}

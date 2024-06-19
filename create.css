@@ -41,6 +41,10 @@ html{
     cursor: pointer;
 }
 
+#go:hover{
+    background-color: rgb(196, 24, 24);
+}
+
 .nav-list{
     width: 70%;
     display: flex;

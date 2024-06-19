@@ -7,6 +7,11 @@
     }
     /* background-color: #89cff0; */
 }
+
+html{
+    overflow-x: hidden;
+}
+
 section{
     h1 {
         text-align: center;
@@ -28,14 +33,6 @@ section{
         padding: 10px;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    button{
-        padding: 20px 300px;
-        font-size: 1.5rem;
-        margin-left: 30px;
-        border-radius: 5px;
-        background-color: #00509e;
-        cursor: pointer;
     }
     a{
         text-decoration: none;
@@ -93,7 +90,6 @@ section{
 }
 
 .rightnav{
-    
     width:30%;
     padding: 0 23px; 
     text-align:right;
@@ -116,6 +112,49 @@ section{
     color:white;
 }
 
+.btn-large{
+    padding: 20px 300px;
+    font-size: 1.5rem;
+    margin-left: 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    color:#00509e;
+    border-color: #00509e;
+    cursor: pointer;
+}
+
+.btn-large:hover{
+    padding: 20px 300px;
+    font-size: 1.5rem;
+    margin-left: 30px;
+    border-radius: 5px;
+    background-color: #00509e;
+    color:#fff;
+    border-color: #fff;
+    cursor: pointer;
+}
+
+#btn-small{
+    padding: 10px 93px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    border-color: #00509e;
+    color:#00509e;
+}
+
+#btn-small:hover{
+    padding: 10px 93px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #00509e;
+    color:#fff;
+    border-color: #fff;
+}
 
 .background{
     background: rgba(0,0,0,0.7) url('friend.jpeg');
@@ -146,7 +185,7 @@ section{
     display: flex;
 }
 .form{
-    max-width: 82%;
+    max-width: 100%;
     margin:auto;
 }
 .form-input{
@@ -168,10 +207,13 @@ section{
 
 .social {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
     font-size: 26px;
     font-weight: 600;
+    h2{
+        margin-top: -10px;
+    }
 }
 
 .social-item {
@@ -181,13 +223,17 @@ section{
 }
 
 .social img {
-    width: 10%;
+    width: 7%;
     border-radius: 4px;
     padding: 10px;
 }
 
 .social-text {
     margin-left: 10px;
-    color: rgb(3, 60, 42);
+    color: #00509e;
     cursor: pointer;
+}
+
+#insta{
+    margin-top: 10px;
 }
