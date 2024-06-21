@@ -1,7 +1,8 @@
 # E-Commerce Project for Water Consevation
 
-This project is done for making a communication barrier between <br>
-NGO's and Industries
+This project is done for establishing of a Link between <br>
+Industries For Waste-Water/Treated-Water exchange.<br>
+We provide a platform for exchange.
 
 ## You can see the preview of this site
 
